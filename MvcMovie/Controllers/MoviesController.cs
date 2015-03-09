@@ -15,9 +15,8 @@ namespace MvcMovie.Controllers
         private MovieDBContext db = new MovieDBContext();
 
         // GET: Movies
-        public ActionResult Index(string id)
+        public ActionResult Index(string searchString)
         {
-            string searchString = id;
             var movies = from m in db.Movies
                          select m;
 
@@ -27,12 +26,6 @@ namespace MvcMovie.Controllers
             }
 
             return View(movies);
-        }
-
-        [HttpPost]
-        public string Index(FormCollection fc, string searchString)
-        {
-            return "<h3> From [HttpPost]Index: " + searchString + "</h3>";
         }
 
         // GET: Movies/Details/5
