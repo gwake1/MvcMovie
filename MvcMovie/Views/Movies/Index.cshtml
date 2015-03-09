@@ -34,6 +34,8 @@
         <th>
             @Html.DisplayNameFor(model => model.Rating)
         </th>
+        <th>My Rating</th>
+        <th>Aggregate Rating</th>
         <th></th>
     </tr>
 
@@ -54,6 +56,19 @@
         <td>
             @Html.DisplayFor(modelItem => item.Rating)
         </td>
+        <td>
+            <form>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <input type="submit" value="Rate Movie" />
+            </form>
+        </td>
+        <td>N/A</td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
             @Html.ActionLink("Details", "Details", new { id=item.ID }) |
