@@ -166,15 +166,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\Migrations\201503091541348_InitialCreate.cs" />
-    <Compile Include="Controllers\Migrations\201503091541348_InitialCreate.Designer.cs">
+    <Compile Include="Migrations\201503091541348_InitialCreate.cs" />
+    <Compile Include="Migrations\201503091541348_InitialCreate.Designer.cs">
       <DependentUpon>201503091541348_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\Migrations\201503091650299_Initial.cs" />
-    <Compile Include="Controllers\Migrations\201503091650299_Initial.Designer.cs">
+    <Compile Include="Migrations\201503091650299_Initial.cs" />
+    <Compile Include="Migrations\201503091650299_Initial.Designer.cs">
       <DependentUpon>201503091650299_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\Migrations\Configuration.cs" />
+    <Compile Include="Migrations\201503091709575_DataAnnotations.cs" />
+    <Compile Include="Migrations\201503091709575_DataAnnotations.Designer.cs">
+      <DependentUpon>201503091709575_DataAnnotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\201503091656087_Rating.cs" />
     <Compile Include="Migrations\201503091656087_Rating.Designer.cs">
       <DependentUpon>201503091656087_Rating.cs</DependentUpon>
@@ -261,14 +265,17 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Controllers\Migrations\201503091541348_InitialCreate.resx">
+    <EmbeddedResource Include="Migrations\201503091541348_InitialCreate.resx">
       <DependentUpon>201503091541348_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controllers\Migrations\201503091650299_Initial.resx">
+    <EmbeddedResource Include="Migrations\201503091650299_Initial.resx">
       <DependentUpon>201503091650299_Initial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201503091656087_Rating.resx">
       <DependentUpon>201503091656087_Rating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503091709575_DataAnnotations.resx">
+      <DependentUpon>201503091709575_DataAnnotations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
