@@ -15,6 +15,7 @@ namespace MvcMovie.Controllers
         private MovieDBContext db = new MovieDBContext();
 
         // GET: Movies
+        [Authorize]
         public ActionResult Index(string movieGenre, string searchString)
         {
             var GenreLst = new List<string>();
